@@ -297,7 +297,7 @@ def apply_filters(hp, fs, bells, slopes, message):
 # Plot magnitude responses
 for i in range(hpfilesnum):
 
-    if i!=6: continue
+    #if i!=6: continue
 
     # Calculate frequency response for headphone
     hp_fft = np.fft.rfft(hp[i], len(hp[i]), norm='forward')  # norm='forward' for 1/n scaling
